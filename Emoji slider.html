@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Emoji Survey</title>
+</head>
+<body>
+  <h2>How was your day?</h2>
+  <form>
+    <input type="range" min="1" max="5" value="3" id="slider" 
+           oninput="document.getElementById('emoji').innerText = ['😡','😟','😐','😊','😍'][this.value-1]">
+    <span id="emoji">😐</span><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
