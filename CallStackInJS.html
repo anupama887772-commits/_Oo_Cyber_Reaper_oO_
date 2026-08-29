@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Call Stack</h2>
+        <p>The call stack is a mechanism for an interpreter (like the JavaScript interpreter) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function.</p>
+        <p>When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function. Any functions that are called by that function are added to the call stack further up, and run where their calls were made.</p>
+        <p>When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.</p>
+        <p><mark>Do a calculation and then display the result.</mark></p>
+
+        <p id="demo"></p>
+        <script>
+            function add(a,b){
+                return a + b;
+            }
+            function average(a,b){
+                return add(a,b)/2;
+            }
+            let result = average(10,20);
+            document.getElementById("demo").innerHTML = result;
+        </script>
+    </body>
+</html>git
