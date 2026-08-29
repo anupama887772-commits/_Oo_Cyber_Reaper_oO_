@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bonus Activity</title>
+    </head>
+    <style>
+        body {
+            background-color:#F8F8F2;
+        }
+        h1 {
+            color:#0085c8;
+        }
+        .card-label {
+            font-size:11px;
+            color:#002741;
+            text-trandform:uppercase;
+        }
+        pre {
+            font-size:13px;
+            color:#333;
+        }
+        </style>
+</head>
+<body class="py-4">
+    <div class="container">
+        <h1 class="mb-4">My Dog</h1>
+        <p class="text-muted mb-4">Introduction to my Dog</p>
+       
+        <div class="card-shadow-sn mb-3" style="max-width:400px;">
+            <div class="card-body">
+                <h5 class="card-title" style="color:#0085c8;">My Dog Details</h5>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <span class="card-label d-block">Name</span>
+                    <strong id="name">Shihtzu</strong>
+                </li>
+                <li class="list-group-item">
+                    <span class="card-label d-block">Breed</span>
+                    <strong id="breed">Shih Tzu</strong>
+                </li>
+                <li class="list-group-item">
+                    <span class="card-label d-block">Favourite Food</span>
+                    <strong id="favouriteFood">Treats</strong>
+                </li>
+                <li class="list-group-item">
+                    <span class="card-label d-block">Hobbies</span>
+                    <strong id="hobbies">Playing ,Sleeping and making others smile 😁😁</strong>
+                </li>
+            </ul>
+         </div>
+     </div>
+    
+     
+</div>
+<script>
+        var myDog = {
+            name: "Shihtzu",
+            breed: "Shih Tzu",
+            favouriteFood: "Treats",
+            hobbies: "Playing, Sleeping and making others smile"
+        };
+
+        var nameEl = document.getElementById("name");
+        var breedEl = document.getElementById("breed");
+        var favouriteFoodEl = document.getElementById("favouriteFood");
+        var hobbiesEl = document.getElementById("hobbies");
+        nameEl.textContent = myDog.name;
+        breedEl.textContent = myDog.breed;
+        favouriteFoodEl.textContent = myDog.favouriteFood;
+        hobbiesEl.textContent = myDog.hobbies;
+
+</script>
+</body>
+</html>
