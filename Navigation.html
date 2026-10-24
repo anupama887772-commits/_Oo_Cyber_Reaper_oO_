@@ -17,10 +17,10 @@
         .topnav a {
             float: left;
             color: #1affa3;
-            text-align0: center;
+            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-sixe: 17px;
+            font-size: 17px;
         }
 
         .topnav a:hover {
@@ -42,6 +42,29 @@
         <a href="#">Gallery</a>
         <a href="#">Contact_Us</a>
     </div>
-</body>
 
+    <section>
+        <img class="mySlides" src="gojo.png" style="height:250px;">
+        <img class="mySlides" src="gojoo.png" style="height:300px;">
+        <img class="mySlides" src="yuji.png" style="height:350px;">
+        <img class="mySlides" src="myuji.png" style="height:300px;">
+        <img class="mySlides" src="heinsukuna.png" style="height:300px;">
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); 
+        }
+    </script>
+</body>
 </html>
